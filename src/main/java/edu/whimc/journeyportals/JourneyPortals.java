@@ -15,7 +15,7 @@ public final class JourneyPortals extends JavaPlugin {
   public void onEnable() {
     instance = this;
     JourneyApi journey = JourneyApiProvider.get();
-    journey.registerTunnels(player -> Portal.getPortals().stream()
+    journey.registerTunnels(getName(), player -> Portal.getPortals().stream()
         .filter(portal -> portal.getDestination() != null)
         .filter(portal -> portal.getWorld() != null)
         .filter(portal -> portal.getDestination().getLocation().getWorld() != null)
