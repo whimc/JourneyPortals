@@ -1,0 +1,6 @@
+name: JourneyPortals
+version: '${version}'
+main: edu.whimc.journeyportals.JourneyPortals
+api-version: 1.19
+depend: [ Journey, Portals ]
+description: Integrates WHIMC-Portals into Journey
